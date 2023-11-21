@@ -1,0 +1,38 @@
+.aboutContainer{
+    padding: 100px 60px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.rightAbout .line{
+    border-bottom: 1px solid $secondaryColor;
+    width: 125px;
+}
+.rightAbout h2{
+    margin: 20px 0;
+    font-size: 50px;
+}
+.aboutText{
+    width: 470px;
+}
+@media all and (max-width: 760px){
+    .aboutContainer{
+        padding: 100px 20px;
+    }
+    .leftAbout{
+        width: 100%;
+    }
+    .leftAbout img{
+        width: 100%;
+    }
+    .rightAbout{
+        width: 100%;
+    }
+    .rightAbout h2{
+        font-size: 40px;
+    }
+    .aboutText{
+        width: 100%;
+    }
+}

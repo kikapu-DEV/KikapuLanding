@@ -1,0 +1,66 @@
+.downloadContainer{
+    background-color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 40px;
+}
+.downloadLeft{
+    display: flex;
+    flex-direction: column;
+    color: $whiteText;
+}
+.downloadLeft h3{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.downloadLeft p{
+    margin-bottom: 30px;
+    width: 600px;
+}
+.downloadInfo{
+    display: flex;
+    gap: 20px;
+}
+.downloadBox{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: $mainColor;
+    border-radius: 20px;
+}
+.boxText {
+    text-align: center; /* Center text horizontally */
+  }
+.downloadRight{
+    display: flex;
+    justify-content: center;
+
+}
+@media all and (max-width: 840px){
+    .downloadContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .downloadRight, .downloadLeft{
+        width: 100%;
+    }
+    .downloadRight img{
+        width: 100%;
+    }
+    .downloadLeft{
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .downloadLeft p{
+        width: auto;
+    }
+}

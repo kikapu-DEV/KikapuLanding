@@ -1,0 +1,52 @@
+.homeContainer{
+    height: 750px;
+    background-color: $mainColor;
+    color: $whiteText;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    border-bottom: 3px solid $secondaryColor;
+}
+.homeLeft{
+    // border: 1px solid red;
+    padding-top: 150px;
+}
+.homeLeftContent{
+    // border: 1px solid green;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.homeLeftContent p{    
+   font-size: 40px;
+   margin-bottom: 30px;
+   width: 550px;
+
+}
+.leftText{
+    font-size: 26px !important;
+    font-weight: 400;
+}
+.appLinks{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.homeRight{
+    display: flex;
+    align-items: center;
+}
+
+@media all and (max-width: 1024px){
+    .homeContainer{
+        flex-wrap: wrap;
+    }
+    .homeLeftContent p{
+        width: auto;
+    }
+    .homeRight{
+        display: none;
+    }
+}

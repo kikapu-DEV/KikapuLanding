@@ -1,0 +1,42 @@
+.checkAppContainer{
+    padding: 100px 50px;
+}
+.checkAppContainer p{
+    width: 50%;
+    margin: 20px auto;
+}
+.checkAppDisplay{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+.lower{
+    padding-top: 60px;
+}
+@media all and (max-width: 1024px){
+    .checkAppDisplay{
+        flex-wrap: wrap;
+        // justify-content: flex-start;
+    }
+    .lower{
+        padding-top: 0;
+    }
+    .center img{
+        height: 85%;
+    }
+}
+@media all and (max-width: 760px){
+    .checkAppContainer p{
+        width: 100%;
+    }
+    .checkAppDisplay{
+        flex-wrap: wrap;
+    }
+    .lower{
+        padding-top: 0;
+    }
+    .lower img, .center img{
+        width: 100%;
+    }
+}

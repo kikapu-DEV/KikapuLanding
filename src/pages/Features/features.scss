@@ -1,0 +1,140 @@
+.FeaturesContainer{
+    padding: 100px;
+    background-color: $mainColor;
+    color: $whiteText;
+}
+.FeaturesContainer h2{
+    text-align: center;
+}
+.fText{
+    text-align: center;
+    padding: 20px 120px;
+}
+.featuresBox{
+    position: relative;
+    border: 3px solid $mainColor;
+    box-shadow: 0px 8px 1px $mainColor;
+    height: 100vh;
+    width: 100%;
+    padding: 30px 0;
+    border-radius: 20px;
+    margin: 250px 0;
+}
+.featuresList{
+    height: 100%;
+}
+.list{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.list img{
+    width: 70px;
+    height: 70px;
+}
+.list p{
+    text-align: center;
+}
+.featureDesc{
+    text-align: start;
+}
+.wallet{
+    top: -20%;
+    left: 42%;
+}
+.foodCredit{
+    top: 45%;
+    left: 15%;
+}
+.marketPlace{
+    top: 105%;
+    left: 42%;
+}
+.speedee{
+    top: 45%;
+    left: 70%;
+}
+
+.centerImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media all and (max-width: 1024px){
+    .FeaturesContainer{
+        padding: 40px;
+    }    
+    .featuresBox{
+        height: 100vh;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .featuresList{
+        padding: 10px;
+    }
+    .list p{
+        font-size: 12px;
+        width: 100px;
+    }
+    .centerImg{
+        width: 50%;
+    }
+    .wallet{
+        top: 20px;
+        left: 33%;
+    }
+    .foodCredit{
+        top: 45%;
+        left: -5%;
+    }
+    .speedee{
+        top: 45%;
+        left: 67%;
+    }
+    .marketPlace{
+        top: 85%;
+        left: 33%;
+    }
+    
+}
+@media all and (max-width: 500px){
+    .featuresBox{
+        margin-top: 20px;
+    }
+    .fText{
+        padding: 0;
+    }
+    .featureList{
+        height: auto;
+    }
+
+    .list img{
+        width: 15%;
+        height: 50%;
+    }
+    .list p{
+        font-size:14px;
+    }
+    .wallet{
+        top: 3%;
+        left: 7%;
+    }
+    .foodCredit{
+        top: 35%;
+        left: -36%;
+    }    
+    .speedee{
+        top: 35%;
+        left: 50%;
+    }
+    .marketPlace{
+        top: 75%;
+        left: 7%;
+    }
+    
+
+}
