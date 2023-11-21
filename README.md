@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Kikapu 
+Kikapu provides food supply chain data-driven payment services that connects food producers (farmers), restaurants and university students (consumers)in Africa through a demand and supply simulation model.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Kikapu provides data-driven payment services to connect famers, restaurants and customers (students in our case). Our platform connects food producers (farmers), restaurants, and consumers (university students) through a demand and supply simulation model. By leveraging data, we efficiently match the needs of farmers and restaurants with the demand for food, ensuring equitable distribution and affordable access to nutritious meals for consumers.
 
-## Available Scripts
+### FOOD SUPPLY CHAIN SYSTEM SIMPLIFIED
+From the farm to folk through restaurants and hotels, we have made the process easy for producers, consumers and hotels. Our goal is to address the food insecurity in Africa by solving the root cause and vast challenges of fragmentation, food wastage and lack of financial empowerment for famers, food vendors and daily customers (especially students).
 
-In the project directory, you can run:
+## Features
+- Free Kikapu wallet: Streamlined and secure financial transactions when paying for your meals or when purchasing food stuffs from suppliers or farmers.
+- Kikapu Credits: We understand financial constraints can hinder completion of transactions in the food supply chain, be it between customer and restaurant or restaurant and the supplier. Kikapu provides loans at very low interest to help complete the transactions.
 
-### `npm start`
+- Dynamic and Decentralized Marketplace: Food suppliers and restaurants can trade openly and securely through demand and supply models. Suppliers can list their produce (as seller) in the platform and Restaurants can also advertise their requirements (as buyers). Payment is held in an escrow feature until the goods are delivered to the buyer and trade marked complete.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Speedee Service System: This feature allows customers to access menus, make order and even reserve their preferred meals in advance. This feature streamlines the ordering process, reducing wait times and ensuring a pleasant dining experience for customers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+- React: Frontend framework for building a dynamic and interactive user interface.
+- HTML/CSS: Structuring and styling elements to enhance the visual appeal.
+- JavaScript: Enhancing the user experience with dynamic and interactive features.
 
-### `npm test`
+## Getting Started
+### To explore Kikapu:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone the repository.
+- Install necessary dependencies.
+- Run the application locally.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Future Enhancements
+- Adding user authentication for personalized experiences.
+- Implementing a secure payment gateway for seamless transactions.
+- Integration with a backend to fetch real-time product data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Get in Touch
+For questions, feedback, or suggestions, feel free to reach out to us!
