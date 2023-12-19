@@ -34,9 +34,25 @@
     align-items: center;
     gap: 20px;
 }
+.link{
+    color: $whiteText;
+    text-decoration: none;
+    background-color: $secondaryColor;
+    padding: 10px;
+    border-radius: 5px;
+}
+.link:hover{
+    background-color: transparent;
+    border: 1px solid $secondaryColor;
+}
 .homeRight{
     display: flex;
     align-items: center;
+}
+@media all and (max-width: 760px){
+    .homeLeft{
+        padding-top: 80px;
+    }
 }
 
 @media all and (max-width: 1024px){
@@ -48,5 +64,11 @@
     }
     .homeRight{
         display: none;
+    }
+}
+
+@media all and (min-width: 1280px){
+    .homeContainer{
+        gap: 80px
     }
 }

@@ -27,7 +27,8 @@ export const Navbar = () => {
         </button>
       </nav>
       <div className="myDownloadButton">
-        <button className="downloadButton">Download <BiDownload className="downloadIcon"/> </button>
+        <button className="downloadButton">Join waitlist</button>
+        {/* <button className="downloadButton">Download <BiDownload className="downloadIcon"/> </button> */}
       </div>
       
       <button className="navBtn" onClick={showNavbar}>
