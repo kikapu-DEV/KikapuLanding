@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Home/>
+      <Home />
+      <Features />
       <About/>
-      <Features/>
       <CheckApp/>
       <DownloadNow/>
       <Team/>
