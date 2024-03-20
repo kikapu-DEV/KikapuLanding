@@ -8,7 +8,7 @@ export const Home = () => {
     <div className="homeContainer">
       <div className="homeLeft">
         <div className="homeLeftContent">
-          <p style={{ fontSize: "24px" }}>The African Food Basket</p>
+          <p style={{ fontSize: "24px" }} className='title'>The African Food Basket</p>
           <p>
             KikapuApp Food Basket:{" "}
             <span style={{ color: "#18D26E" }}>

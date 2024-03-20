@@ -18,6 +18,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.title{
+    text-shadow: 2px 2px 4px $secondaryColor;
+}
 .homeLeftContent p{    
    font-size: 40px;
    margin-bottom: 30px;

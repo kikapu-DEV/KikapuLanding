@@ -17,7 +17,9 @@ header h2 {
 nav {
     display: flex;
 }
-
+.logoName{
+    text-shadow: 2px 2px 4px $secondaryColor;
+}
 nav a {
     padding: 10px 15px;
     margin: 0 10px;
