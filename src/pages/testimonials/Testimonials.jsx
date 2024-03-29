@@ -39,8 +39,7 @@ const Testimonials = () => {
 				<Swiper
 					spaceBetween={30}
 					slidesPerView={3}
-					onSlideChange={() => console.log("slide change")}
-					onSwiper={(swiper) => console.log(swiper)}
+					autoplay={{ delay: 2500, disableOnInteraction: false }}
 					className='testimonialsContainer'
 					breakpoints={{
 						0: {
