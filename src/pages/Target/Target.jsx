@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { images } from "../../constants";
 import AOS from "aos";
-export const Features = () => {
-	const featuresList = [
+
+export const Target = () => {
+	const targetList = [
 		{
 			icon: images.students,
 			title: "Students",
@@ -10,16 +11,16 @@ export const Features = () => {
 			desc: "Download the App & Eat Now!",
 		},
 		{
-			icon: images.vendor,
-			title: "Vendors",
-			class: "marketPlace",
-			desc: "Partner with KikapuApp & Redefine the ordering processes for walk-in customers",
-		},
-		{
 			icon: images.parents,
 			title: "Parents",
 			class: "foodCredit",
 			desc: "Top Up Your Child's Account & Ensure Peace of Mind",
+		},
+		{
+			icon: images.vendor,
+			title: "Vendors",
+			class: "marketPlace",
+			desc: "Partner with KikapuApp & Redefine the ordering processes for walk-in customers",
 		},
 	];
 
@@ -27,13 +28,13 @@ export const Features = () => {
 		AOS.init({ duration: 2000 });
 	}, []);
 	return (
-		<div className='FeaturesContainer'>
+		<div className='TargetsContainer'>
 			<h2 className='titleHeader'>
 				<span style={{ color: "#18D26E" }}>WHO IS</span> KIKAPU FOR?
 			</h2>
 
-			<div className='featureRow'>
-				{featuresList.map((item, index) => (
+			<div className='targetRow'>
+				{targetList.map((item, index) => (
 					<div className='card' data-aos='zoom-in'>
 						<div>
 							<img src={item.icon} alt='Icon' className='icon' />

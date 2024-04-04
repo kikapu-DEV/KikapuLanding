@@ -1,20 +1,20 @@
 // variables
-@import './styles/variables.scss';
+@import "./styles/variables.scss";
 
 // components
-@import './components/Navbar/navbar.scss';
-@import './components/Footer/footer.scss';
+@import "./components/Navbar/navbar.scss";
+@import "./components/Footer/footer.scss";
 
 // pages
-@import './pages/Home/home.scss';
-@import './pages/About/about.scss';
-@import './pages/Features2/features.scss';
-@import './pages/CheckApp/checkapp.scss';
-@import './pages/downloadNow/DownloadNow.scss';
-@import './pages/Team/team.scss';
-@import './pages/testimonials/testimonials.scss';
-@import './pages/Faqs/faqs.scss';
+@import "./pages/Home/home.scss";
+@import "./pages/Target/target.scss";
+@import "./pages/Features/features.scss";
+@import "./pages/CheckApp/checkapp.scss";
+@import "./pages/downloadNow/DownloadNow.scss";
+@import "./pages/Team/team.scss";
+@import "./pages/testimonials/testimonials.scss";
+@import "./pages/Faqs/faqs.scss";
 
-.App{
-    overflow-x: hidden;
+.App {
+	overflow-x: hidden;
 }
