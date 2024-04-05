@@ -1,12 +1,19 @@
 import { useEffect } from "react";
 import { images } from "../../constants";
 import AOS from "aos";
+import {
+	ShieldCheck,
+	CreditCard,
+	FolderKanban,
+	LineChart,
+	Folder,
+} from "lucide-react";
 
 export const Features = () => {
 	const featuresList = [
 		{
-			icon: images.vendor,
-			title: "Security",
+			icon: <ShieldCheck color='#18D26E' size={50} />,
+			title: "Secure Payment System",
 			class: "marketPlace",
 			desc: "KikapuApp is a secure platform that ensures the safety of your data.",
 			subFeatures: [
@@ -16,7 +23,7 @@ export const Features = () => {
 			],
 		},
 		{
-			icon: images.students,
+			icon: <CreditCard color='#18D26E' size={50} />,
 			title: "Prepaid Meals System",
 			class: "wallet",
 			desc: "Download the App & Eat Now!",
@@ -26,7 +33,7 @@ export const Features = () => {
 			],
 		},
 		{
-			icon: images.parents,
+			icon: <FolderKanban color='#18D26E' size={50} />,
 			title: "Management Tool",
 			class: "foodCredit",
 			desc: "Top Up Your Child's Account & Ensure Peace of Mind.",
@@ -37,7 +44,7 @@ export const Features = () => {
 			],
 		},
 		{
-			icon: images.vendor,
+			icon: <LineChart color='#18D26E' size={50} />,
 			title: "Data Tool ",
 			class: "marketPlace",
 			desc: "Partner with KikapuApp & Redefine the ordering processes for walk-in customers.",
@@ -60,9 +67,7 @@ export const Features = () => {
 			<div className='featureRow'>
 				{featuresList.map((item, index) => (
 					<div className='feature-card' data-aos='zoom-in'>
-						<div>
-							<img src={item.icon} alt='Icon' className='icon' />
-						</div>
+						<div className='feature-icon'>{item.icon}</div>
 						<h4 className='title'>{item.title}</h4>
 						{/* <p className='desc'>{item.desc}</p> */}
 						<ul className='subFeatures'>

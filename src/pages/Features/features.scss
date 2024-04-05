@@ -21,9 +21,11 @@
 	width: 300px;
 	display: flex;
 	flex-direction: column;
-	border-radius: 50px;
+	border-radius: 20px;
 	background: $mainColor;
 	color: #fff;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+
 	.subFeatures {
 		text-align: left;
 		width: 90%;

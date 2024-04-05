@@ -43,6 +43,7 @@
 		]
 	},
 	"devDependencies": {
+		"lucide-react": "^0.364.0",
 		"swiper": "^11.1.0"
 	}
 }
