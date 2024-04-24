@@ -11,7 +11,7 @@ export const Footer = () => {
 
 			<div className='footerDetails'>
 				<div className='topInfo'>
-					<p className='contact'>info@gmail.com</p>
+					<p className='contact'>info@kikapuapp.com</p>
 					<p className='pipe' />
 					<p>+2547 23 456 789</p>
 				</div>

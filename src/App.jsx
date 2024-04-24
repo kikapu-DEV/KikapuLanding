@@ -7,8 +7,8 @@ import Faqs from "./pages/Faqs/Faqs";
 import { Target } from "./pages/Target/Target";
 import { Home } from "./pages/Home/Home";
 import { Team } from "./pages/Team/index";
-import { DownloadNow } from "./pages/downloadNow/DownloadNow";
-import Testimonials from "./pages/testimonials/Testimonials";
+import { WhyUs } from "./pages/whyUs/WhyUs";
+import Partners from "./pages/partners/Partners";
 
 function App() {
 	return (
@@ -16,10 +16,10 @@ function App() {
 			<Navbar />
 			<Home />
 			<Target />
-			<Features />
+			<WhyUs />
 			<CheckApp />
-			<DownloadNow />
-			<Testimonials />
+			<Features />
+			<Partners />
 			<Faqs />
 			<Team />
 			<Footer />

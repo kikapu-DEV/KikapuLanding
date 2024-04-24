@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { images } from "../../constants";
+// import { images } from "../../constants";
 import AOS from "aos";
 import {
 	ShieldCheck,
@@ -13,7 +13,7 @@ export const Features = () => {
 	const featuresList = [
 		{
 			icon: <ShieldCheck color='#18D26E' size={50} />,
-			title: "Secure Payment System",
+			title: "Secure Payment",
 			class: "marketPlace",
 			desc: "KikapuApp is a secure platform that ensures the safety of your data.",
 			subFeatures: [
@@ -24,7 +24,7 @@ export const Features = () => {
 		},
 		{
 			icon: <CreditCard color='#18D26E' size={50} />,
-			title: "Prepaid Meals System",
+			title: "Prepaid Meals",
 			class: "wallet",
 			desc: "Download the App & Eat Now!",
 			subFeatures: [
@@ -34,7 +34,7 @@ export const Features = () => {
 		},
 		{
 			icon: <FolderKanban color='#18D26E' size={50} />,
-			title: "Management Tool",
+			title: "Inventory Management",
 			class: "foodCredit",
 			desc: "Top Up Your Child's Account & Ensure Peace of Mind.",
 			subFeatures: [
@@ -44,13 +44,13 @@ export const Features = () => {
 			],
 		},
 		{
-			icon: <LineChart color='#18D26E' size={50} />,
-			title: "Data Tool ",
+			icon: <Folder color='#18D26E' size={50} />,
+			title: "Credit Facility",
 			class: "marketPlace",
 			desc: "Partner with KikapuApp & Redefine the ordering processes for walk-in customers.",
 			subFeatures: [
-				"Demand and supply simulations.",
-				"Real-time geographical demands consumption data.",
+				"For restaurant and their expenses.",
+				"For students and general users.",
 			],
 		},
 	];

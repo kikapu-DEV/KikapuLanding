@@ -1,56 +1,78 @@
-.teamContainer{
-    padding: 100px 60px;
-
+.teamContainer {
+	width: 80%;
+	margin: 5rem auto;
 }
-.teamContainer h2{
-    text-align: center;
-    font-size: 48px;
-}
-.teamList{
-    margin: 80px 0;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-.personCard{
-    text-align: center;
-}
-.personImg{
-    width: 250px;
-}
-.personImg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid $secondaryColor;
+.teamContainer h2 {
+	text-align: center;
+	font-size: 34px;
+	text-transform: uppercase;
 }
 
-.personCard p{
-    margin-bottom: 15px;
+.teamContainer p {
+	text-align: center;
+	margin: 20px 0;
 }
 
-.personContent{
-    margin: 10px 0;
-}
-.socials{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    font-size: 24px;
-}
-.socials:hover{
-    cursor: pointer;
+.teamList {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 4rem 0;
+	gap: 2.5rem;
 }
 
-@media all and (max-width: 840px){
-    .teamContainer{
-        padding: 20px;
-    }
+.personCard {
+	text-align: center;
 }
-@media all and (max-width: 280px){
-    .personCard img{
-        width: 100%;
-    }
+
+.personImg {
+	width: 250px;
+}
+
+.personImg img {
+	width: 15rem;
+	height: 15rem;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid $secondaryColor;
+}
+
+.personCard p {
+	margin: 1rem 0;
+}
+
+.personContent {
+	margin: 1rem 0;
+
+	.person-name {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	.person-role {
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+}
+.socials {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	font-size: 24px;
+
+	.social-item:hover {
+		cursor: pointer;
+		color: $secondaryColor;
+	}
+}
+
+@media all and (max-width: 840px) {
+	.teamContainer {
+		padding: 20px;
+	}
+}
+@media all and (max-width: 280px) {
+	.personCard img {
+		width: 100%;
+	}
 }

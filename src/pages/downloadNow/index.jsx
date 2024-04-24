@@ -1,1 +1,0 @@
-export {DownloadNow} from './DownloadNow'

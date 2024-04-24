@@ -1,20 +1,25 @@
 .TargetsContainer {
-	padding: 100px;
+	// padding: 100px;
 	background-color: #fff;
 	color: #000;
 	text-align: center;
+	width: 80%;
+	margin: 5rem auto;
 }
 .titleHeader {
 	font-size: 34px;
 }
+
 .targetRow {
 	// border: 1px solid black;
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	align-items: center;
+	flex-flow: row nowrap;
 	gap: 120px;
 	padding: 60px 0;
 }
+
 .card {
 	// border: 1px solid black;
 	padding: 70px 20px;
@@ -36,4 +41,16 @@
 	text-shadow: none;
 	padding: 20px 0;
 	font-size: 20px;
+}
+
+@media all and (max-width: 840px) {
+	.titleHeader {
+		font-size: 1.5rem;
+	}
+	.targetRow {
+		flex-flow: column nowrap;
+	}
+	.card {
+		width: 100%;
+	}
 }

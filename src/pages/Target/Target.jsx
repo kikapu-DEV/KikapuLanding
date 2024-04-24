@@ -6,21 +6,21 @@ export const Target = () => {
 	const targetList = [
 		{
 			icon: images.students,
-			title: "Students",
+			title: "Students & Parents",
 			class: "wallet",
-			desc: "Download the App & Eat Now!",
-		},
-		{
-			icon: images.parents,
-			title: "Parents",
-			class: "foodCredit",
-			desc: "Top Up Your Child's Account & Ensure Peace of Mind",
+			desc: "Top-up the prepaid meal account and have peace of mind.",
 		},
 		{
 			icon: images.vendor,
-			title: "Vendors",
+			title: "Restaurants & Vendors",
 			class: "marketPlace",
-			desc: "Partner with KikapuApp & Redefine the ordering processes for walk-in customers",
+			desc: "Partner with KikapuApp & Redefine the ordering processes for walk-in customers.",
+		},
+		{
+			icon: images.parents,
+			title: "Restaurants & Walk-in Customers",
+			class: "foodCredit",
+			desc: "Make reservations, preorders, and pay for meals with ease.",
 		},
 	];
 
@@ -30,12 +30,12 @@ export const Target = () => {
 	return (
 		<div className='TargetsContainer'>
 			<h2 className='titleHeader'>
-				<span style={{ color: "#18D26E" }}>WHO IS</span> KIKAPU FOR?
+				<span style={{ color: "#18D26E" }}>WHO IS</span> KIKAPU APP FOR?
 			</h2>
 
 			<div className='targetRow'>
 				{targetList.map((item, index) => (
-					<div className='card' data-aos='zoom-in'>
+					<div key={index} className='target-card' data-aos='zoom-in'>
 						<div>
 							<img src={item.icon} alt='Icon' className='icon' />
 						</div>

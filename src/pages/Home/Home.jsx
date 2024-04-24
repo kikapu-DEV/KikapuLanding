@@ -11,12 +11,12 @@ export const Home = () => {
 		<div className='homeContainer'>
 			<div className='homeLeft'>
 				<div className='homeLeftContent'>
-					<p style={{ fontSize: "24px" }} className='title'>
+					{/* <p style={{ fontSize: "24px" }} className='title'>
 						The African Food Basket
-					</p>
+					</p> */}
 					<p>
-						KikapuApp Food Basket:{" "}
-						<span style={{ color: "#18D26E" }}>
+						Kikapu App Food Basket:{" "}
+						<span style={{ color: "#18D26E", fontStyle: "italic" }}>
 							Everything food, restaurants and payments.
 						</span>{" "}
 					</p>
@@ -26,7 +26,6 @@ export const Home = () => {
 						student audience - all on one secure platform.
 					</p>
 
-					{/* <h3><span style={{color: '#18D26E'}}>DOWNLOAD</span> APP NOW</h3> */}
 					<div className='appLinks'>
 						{isWaitlist && (
 							<Link href='/#' className='link'>

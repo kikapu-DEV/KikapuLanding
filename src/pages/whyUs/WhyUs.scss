@@ -1,0 +1,42 @@
+.whyContainer {
+	background-color: $secondaryColor;
+	padding: 5rem;
+}
+
+.header {
+	h3 {
+		color: $whiteText;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.reasons-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	gap: 2rem;
+}
+
+.reason {
+	width: 20%;
+	padding: 2rem;
+	background-color: $mainColor;
+	color: $whiteText;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px $mainColor, -2px -2px 5px $mainColor;
+	h4 {
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+}
+@media all and (max-width: 840px) {
+	.header h3 {
+		font-size: 1.5rem;
+	}
+
+	.reason {
+		width: 100%;
+	}
+}
