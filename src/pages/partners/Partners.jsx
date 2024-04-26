@@ -16,7 +16,7 @@ const Partners = () => {
 	return (
 		<div className='PContainer'>
 			<h2 className='partners-header'>Our Partners</h2>
-			<div className=''>
+			<div className='partners-container'>
 				<Swiper
 					spaceBetween={30}
 					slidesPerView={3}
