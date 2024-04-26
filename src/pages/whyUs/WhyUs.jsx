@@ -34,7 +34,7 @@ export const WhyUs = () => {
 	return (
 		<div className='whyContainer'>
 			<div className='header'>
-				<h3>Why Kikapu App</h3>
+				<h3>Why KikapuApp</h3>
 			</div>
 			<div className='reasons-container'>
 				{reasons.map((reason) => (

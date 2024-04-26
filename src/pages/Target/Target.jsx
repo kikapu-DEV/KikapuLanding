@@ -30,7 +30,7 @@ export const Target = () => {
 	return (
 		<div className='TargetsContainer'>
 			<h2 className='titleHeader'>
-				<span style={{ color: "#18D26E" }}>WHO IS</span> KIKAPU APP FOR?
+				<span style={{ color: "#18D26E" }}>WHO IS</span> KIKAPUAPP FOR?
 			</h2>
 
 			<div className='targetRow'>

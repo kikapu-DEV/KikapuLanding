@@ -1,13 +1,22 @@
 .TargetsContainer {
 	// padding: 100px;
 	background-color: #fff;
-	color: #000;
+	color: $mainColor;
 	text-align: center;
 	width: 80%;
 	margin: 5rem auto;
 }
 .titleHeader {
 	font-size: 34px;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 15%;
+		height: 2px;
+		background-color: $secondaryColor;
+		margin: 1rem auto;
+	}
 }
 
 .targetRow {

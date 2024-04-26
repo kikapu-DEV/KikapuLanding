@@ -9,6 +9,15 @@
 		text-transform: uppercase;
 		text-align: center;
 	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 15%;
+		height: 2px;
+		background-color: $mainColor;
+		margin: 1rem auto;
+	}
 }
 
 .reasons-container {

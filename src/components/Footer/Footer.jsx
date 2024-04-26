@@ -5,7 +5,7 @@ export const Footer = () => {
 		<div className='footerContainer'>
 			<div className='footerLogo'>
 				<h2>
-					Kikapu<span style={{ color: "#18D26E" }}>.</span>
+					Kikapuapp<span style={{ color: "#18D26E" }}>.</span>
 				</h2>
 			</div>
 
@@ -18,8 +18,8 @@ export const Footer = () => {
 					</div>
 					<span className='pipe' />
 					<div>
-						<a href='tel:+254723456789' className='contact-phone'>
-							+2547 23 456 789
+						<a href='tel:+254745411549' className='contact-phone'>
+							+254 745 411 549
 						</a>
 					</div>
 				</div>
@@ -27,7 +27,7 @@ export const Footer = () => {
 				<div className='bottomInfno'>
 					<p style={{ textAlign: "center" }} className='copyRemove'>
 						{" "}
-						&copy; Copyright {new Date().getFullYear()} Kikapu. All Right
+						&copy; Copyright {new Date().getFullYear()} Kikapuapp. All Right
 						Reserved.
 					</p>
 				</div>
@@ -41,7 +41,8 @@ export const Footer = () => {
 
 			<p style={{ textAlign: "center" }} className='copyright'>
 				{" "}
-				&copy; Copyright 2023 Kikapu. All Right Reserved.
+				&copy; Copyright {new Date().getFullYear()} Kikapuapp. All Right
+				Reserved.
 			</p>
 		</div>
 	);

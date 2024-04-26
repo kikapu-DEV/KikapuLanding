@@ -4,18 +4,19 @@
 .PContainer {
 	height: 30vh;
 	margin: 5rem;
+	color: $mainColor;
 }
 
 .partners-header {
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 34px;
 	text-transform: uppercase;
 	margin-bottom: 3rem;
 
 	&:after {
 		content: "";
 		display: block;
-		width: 15%;
+		width: 10%;
 		height: 2px;
 		background-color: $secondaryColor;
 		margin: 1rem auto;

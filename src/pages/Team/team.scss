@@ -1,11 +1,24 @@
 .teamContainer {
 	width: 80%;
 	margin: 5rem auto;
+	color: $mainColor;
 }
+
 .teamContainer h2 {
 	text-align: center;
 	font-size: 34px;
 	text-transform: uppercase;
+}
+
+.teams-header {
+	&:after {
+		content: "";
+		display: block;
+		width: 15%;
+		height: 2px;
+		background-color: $secondaryColor;
+		margin: 1rem auto;
+	}
 }
 
 .teamContainer p {

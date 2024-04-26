@@ -6,6 +6,14 @@
 }
 .titleHeader {
 	font-size: 34px;
+	&:after {
+		content: "";
+		display: block;
+		width: 15%;
+		height: 2px;
+		background-color: $mainColor;
+		margin: 1rem auto;
+	}
 }
 .featureRow {
 	// border: 1px solid black;

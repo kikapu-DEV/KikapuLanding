@@ -1,77 +1,82 @@
-.homeContainer{
-    height: 750px;
-    background-color: $mainColor;
-    color: $whiteText;
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    border-bottom: 3px solid $secondaryColor;
+.homeContainer {
+	height: 750px;
+	background-color: $mainColor;
+	color: $whiteText;
+	display: flex;
+	justify-content: center;
+	gap: 200px;
+	border-bottom: 3px solid $secondaryColor;
 }
-.homeLeft{
-    // border: 1px solid red;
-    padding-top: 150px;
-}
-.homeLeftContent{
-    // border: 1px solid green;
-    padding: 0 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.title{
-    text-shadow: 2px 2px 4px $secondaryColor;
-}
-.homeLeftContent p{    
-   font-size: 40px;
-   margin-bottom: 30px;
-   width: 550px;
-
-}
-.leftText{
-    font-size: 18px !important;
-    font-weight: 400;
-}
-.appLinks{
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.link{
-    color: $whiteText;
-    text-decoration: none;
-    background-color: $secondaryColor;
-    padding: 10px;
-    border-radius: 5px;
-}
-.link:hover{
-    background-color: transparent;
-    border: 1px solid $secondaryColor;
-}
-.homeRight{
-    display: flex;
-    align-items: center;
-}
-@media all and (max-width: 760px){
-    .homeLeft{
-        padding-top: 80px;
-    }
+.homeLeft {
+	// border: 1px solid red;
+	padding-top: 150px;
 }
 
-@media all and (max-width: 1024px){
-    .homeContainer{
-        flex-wrap: wrap;
-    }
-    .homeLeftContent p{
-        width: auto;
-    }
-    .homeRight{
-        display: none;
-    }
+.homeRight {
+	img {
+		width: 40rem;
+	}
+}
+.homeLeftContent {
+	// border: 1px solid green;
+	padding: 0 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.title {
+	text-shadow: 2px 2px 4px $secondaryColor;
+}
+.homeLeftContent p {
+	font-size: 40px;
+	margin-bottom: 30px;
+	width: 550px;
+}
+.leftText {
+	font-size: 18px !important;
+	font-weight: 400;
+}
+.appLinks {
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.link {
+	color: $whiteText;
+	text-decoration: none;
+	background-color: $secondaryColor;
+	padding: 10px;
+	border-radius: 5px;
+}
+.link:hover {
+	background-color: transparent;
+	border: 1px solid $secondaryColor;
+}
+.homeRight {
+	display: flex;
+	align-items: center;
+}
+@media all and (max-width: 760px) {
+	.homeLeft {
+		padding-top: 80px;
+	}
 }
 
-@media all and (min-width: 1280px){
-    .homeContainer{
-        gap: 80px
-    }
+@media all and (max-width: 1024px) {
+	.homeContainer {
+		flex-wrap: wrap;
+	}
+	.homeLeftContent p {
+		width: auto;
+	}
+	.homeRight {
+		display: none;
+	}
+}
+
+@media all and (min-width: 1280px) {
+	.homeContainer {
+		gap: 80px;
+	}
 }

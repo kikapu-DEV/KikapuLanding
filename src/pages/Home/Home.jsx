@@ -1,6 +1,8 @@
 // import { Link } from 'react-router-dom'
 import { useState } from "react";
-import womanFruits from "../../assets/fruitHome.png";
+// import womanFruits from "../../assets/fruitHome.png";
+import kikapuLogo from "../../assets/kikapuLogo.png";
+
 import playStore from "../../assets/icons/playStore.png";
 import appStore from "../../assets/icons/appStore.png";
 import { Link } from "react-router-dom";
@@ -15,7 +17,7 @@ export const Home = () => {
 						The African Food Basket
 					</p> */}
 					<p>
-						Kikapu App Food Basket:{" "}
+						Kikapuapp Food Basket:{" "}
 						<span style={{ color: "#18D26E", fontStyle: "italic" }}>
 							Everything food, restaurants and payments.
 						</span>{" "}
@@ -49,7 +51,7 @@ export const Home = () => {
 				</div>
 			</div>
 			<div className='homeRight'>
-				<img src={womanFruits} alt='LadyWithBasket' />
+				<img src={kikapuLogo} alt='kikapuLogo' />
 			</div>
 		</div>
 	);

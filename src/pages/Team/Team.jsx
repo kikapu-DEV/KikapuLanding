@@ -37,7 +37,7 @@ export const Team = () => {
 	];
 	return (
 		<div className='teamContainer'>
-			<h2>
+			<h2 className='teams-header'>
 				Meet the <span style={{ color: "#18D26E" }}>team</span>
 			</h2>
 			<p style={{ textAlign: "center" }}>

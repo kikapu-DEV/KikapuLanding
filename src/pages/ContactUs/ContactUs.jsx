@@ -9,7 +9,7 @@ export const ContactUs = () => {
 	return (
 		<div className='ContactsContainer'>
 			<h2 className='titleHeader'>
-				Contact <span className='titleHeaderSub'>KIKAPU</span>
+				Contact <span className='titleHeaderSub'>KIKAPUAPP</span>
 			</h2>
 			<p className='headerSubtitle'>
 				Get in touch with us for any queries or support
@@ -26,8 +26,8 @@ export const ContactUs = () => {
 
 					<p className='contact-detail'>
 						<Phone className='contact-icon' />
-						<a href='tel:+254723456789' className='contact-link'>
-							+2547 23 456 789
+						<a href='tel:+254745411549' className='contact-link'>
+							+254 745 411 549
 						</a>
 					</p>
 				</div>

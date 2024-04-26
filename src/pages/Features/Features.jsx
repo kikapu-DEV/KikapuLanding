@@ -61,7 +61,7 @@ export const Features = () => {
 	return (
 		<div className='FeaturesContainer'>
 			<h2 className='titleHeader'>
-				<span style={{ color: "#fff" }}>FEATURES IN</span> KIKAPU
+				<span style={{ color: "#fff" }}>FEATURES IN</span> KIKAPUAPP
 			</h2>
 
 			<div className='featureRow'>
