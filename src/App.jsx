@@ -9,6 +9,7 @@ import { Home } from "./pages/Home/Home";
 import { Team } from "./pages/Team/index";
 import { WhyUs } from "./pages/whyUs/WhyUs";
 import Partners from "./pages/partners/Partners";
+import { ContactUs } from "./pages/ContactUs";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 			<Partners />
 			{/* <Faqs /> */}
 			<Team />
+			<ContactUs />
 			<Footer />
 		</div>
 	);

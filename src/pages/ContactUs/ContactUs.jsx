@@ -1,0 +1,37 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import { MailIcon, Phone } from "lucide-react";
+
+export const ContactUs = () => {
+	useEffect(() => {
+		AOS.init({ duration: 2000 });
+	}, []);
+	return (
+		<div className='ContactsContainer'>
+			<h2 className='titleHeader'>
+				Contact <span className='titleHeaderSub'>KIKAPU</span>
+			</h2>
+			<p className='headerSubtitle'>
+				Get in touch with us for any queries or support
+			</p>
+
+			<div className='contacts-details-container'>
+				<div className='contact-details'>
+					<p className='contact-detail'>
+						<MailIcon className='contact-icon' />
+						<a href='mailto: info@kikapuapp.com' className='contact-link'>
+							info@kikapuapp.com
+						</a>
+					</p>
+
+					<p className='contact-detail'>
+						<Phone className='contact-icon' />
+						<a href='tel:+254723456789' className='contact-link'>
+							+2547 23 456 789
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	);
+};

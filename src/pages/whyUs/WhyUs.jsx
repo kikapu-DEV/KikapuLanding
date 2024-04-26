@@ -3,12 +3,12 @@ export const WhyUs = () => {
 		{
 			title: "Effortless Inventory Management",
 			description:
-				"Say goodbye to manual tracking and wasted food. KikapuAppgives you real-time data to optimize ordering and minimize waste.",
+				"Say goodbye to manual tracking and wasted food. KikapuApp gives you real-time data to optimize ordering and minimize waste.",
 		},
 		{
 			title: "Seamless Point-of-Sale",
 			description:
-				"Process transactions, manage orders, and accept all payments – all in oneuser-friendly system and application.",
+				"Process transactions, manage orders, and accept all payments – all in one user-friendly system and application.",
 		},
 		{
 			title: "Actionable Business Analytics",
@@ -18,7 +18,7 @@ export const WhyUs = () => {
 		{
 			title: "Unlock Financial Potential",
 			description:
-				"Our unique credit score solutions can open doors to financing opportunities, empowering your restaurant's growth.",
+				"Our unique credit score solutions can open doors to financing opportunities, empowering your restaurant&#39;s growth.",
 		},
 		{
 			title: "Effortless Ordering & Reservations",

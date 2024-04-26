@@ -1,1 +1,1 @@
-export { DownloadNow } from "./DownloadNow";
+export { WhyUs } from "./WhyUs";

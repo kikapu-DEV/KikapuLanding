@@ -11,15 +11,26 @@ export const Footer = () => {
 
 			<div className='footerDetails'>
 				<div className='topInfo'>
-					<p className='contact'>info@kikapuapp.com</p>
-					<p className='pipe' />
-					<p>+2547 23 456 789</p>
+					<div>
+						<a href='mailto: info@kikapuapp.com' className='contact-email'>
+							info@kikapuapp.com
+						</a>
+					</div>
+					<span className='pipe' />
+					<div>
+						<a href='tel:+254723456789' className='contact-phone'>
+							+2547 23 456 789
+						</a>
+					</div>
 				</div>
 
-				<p style={{ textAlign: "center" }} className='copyRemove'>
-					{" "}
-					&copy; Copyright 2023 Kikapu. All Right Reserved.
-				</p>
+				<div className='bottomInfno'>
+					<p style={{ textAlign: "center" }} className='copyRemove'>
+						{" "}
+						&copy; Copyright {new Date().getFullYear()} Kikapu. All Right
+						Reserved.
+					</p>
+				</div>
 			</div>
 
 			<div className='FooterSocials'>
