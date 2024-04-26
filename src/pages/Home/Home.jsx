@@ -21,9 +21,12 @@ export const Home = () => {
 						</span>{" "}
 					</p>
 					<p className='leftText'>
-						KikapuApp is the all-in-one app for students to order delicious
-						meals, manage pre-paid meals accounts, and vendors to reach a hungry
-						student audience - all on one secure platform.
+						Kikapuapp is the all-in-one app for restaurants to manage inventory,
+						manage orders and reservations, receive payments, access credits and
+						view business analytics in real time AND for USERS to order
+						delicious meals, manage pre-paid meal accounts, make payments and
+						access credits on the same while making "bid-able"
+						experiences in restaurants.
 					</p>
 
 					<div className='appLinks'>
