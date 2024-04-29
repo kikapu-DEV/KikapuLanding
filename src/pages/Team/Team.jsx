@@ -21,13 +21,6 @@ export const Team = () => {
 			twitter: "link",
 		},
 		{
-			image: diana,
-			name: "Diana Nyamai",
-			role: "Frontend Engineer",
-			linkedin: "link",
-			twitter: "link",
-		},
-		{
 			image: elie,
 			name: "Elie Muluke",
 			role: "Backend Engineer",
