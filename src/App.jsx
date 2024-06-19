@@ -12,21 +12,21 @@ import Partners from "./pages/partners/Partners";
 import { ContactUs } from "./pages/ContactUs";
 
 function App() {
-	return (
-		<div className='App'>
-			<Navbar />
-			<Home />
-			<Target />
-			<WhyUs />
-			<CheckApp />
-			<Features />
-			<Partners />
-			{/* <Faqs /> */}
-			<Team />
-			<ContactUs />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="App">
+      <Navbar />
+      <Home />
+      <Target />
+      <WhyUs />
+      <CheckApp />
+      <Features />
+      <Partners />
+      {/* <Faqs /> */}
+      <Team />
+      <ContactUs />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
