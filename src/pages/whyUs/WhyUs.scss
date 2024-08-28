@@ -1,51 +1,138 @@
 .whyContainer {
 	background-color: $secondaryColor;
-	padding: 5rem;
+	padding: 3rem 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media(max-width: 1040px){
+		padding: 2rem 1rem;
+	}
+
+	@media(max-width: 600px){
+		padding: 2rem .65rem;
+	}
 }
 
-.header {
-	h3 {
-		color: $whiteText;
-		text-transform: uppercase;
-		text-align: center;
+.whyUsHeading {
+	font-size: 1.8rem;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+	color: $mainColor;
+	
+	@media(max-width: 780px){
+		font-size: 1.7rem;
+	}
+	@media(max-width: 600px){
+		font-size: 1.25rem;
 	}
 
-	&:after {
-		content: "";
-		display: block;
-		width: 15%;
-		height: 2px;
-		background-color: $mainColor;
-		margin: 1rem auto;
-	}
+	// &:after {
+	// 	content: "";
+	// 	display: block;
+	// 	width: 20%;
+	// 	height: 2.5px;
+	// 	background-color: $mainColor;
+	// 	opacity: .8;
+	// 	margin: .5rem auto;
+
+	// 	@media(max-width: 600px){
+	// 		width: 25%;
+	// 	}
+	// 	@media(max-width: 330px){
+	// 		width: 30%;
+	// 	}
+	// }
 }
 
 .reasons-container {
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-	gap: 2rem;
-}
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1.25rem;
+	margin-top: 3rem;
+	max-width: 1440px;
 
-.reason {
-	width: 20%;
-	padding: 2rem;
-	background-color: $mainColor;
-	color: $whiteText;
-	text-align: center;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px $mainColor, -2px -2px 5px $mainColor;
-	h4 {
-		margin-bottom: 1rem;
-		font-size: 1.5rem;
+	@media(max-width: 1040px){
+		gap: 1rem;
 	}
-}
-@media all and (max-width: 840px) {
-	.header h3 {
-		font-size: 1.5rem;
+
+	@media(max-width: 780px){
+		margin-top: 2rem;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media(max-width: 600px){
+		grid-template-columns: 1fr;
 	}
 
 	.reason {
-		width: 100%;
+		padding: 1.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: $mainColor;
+		border-radius: 10px;
+	
+		.reasonTitle{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			width: 100%;
+	
+			.whyIcon {
+				width: 40px;
+
+				@media(max-width: 780px){
+					width: 32px;
+				}
+				@media(max-width: 600px){
+					width: 28px;
+				}
+			}
+
+			.whyText {
+				font-weight: 600;
+				font-size: 1.25rem;
+				color: $whiteText;
+				width: 100%;
+				text-align: left;
+				margin-top: 1rem;
+
+				@media(max-width: 780px){
+					font-size: 1.15rem;
+				}
+				@media(max-width: 600px){
+					font-size: 1.05rem;
+				}
+			}
+		}
+	
+		.reasonDesc{
+			font-size: 16px;
+			color: $whiteText;
+			opacity: .8;
+			margin-top: 1rem;
+	
+			@media (max-width: 780px){
+				font-size: 14px;
+			}
+			@media (max-width: 600px){
+				font-size: 12px;
+				margin-top: .5rem;
+			}
+		}
+	
+		@media(max-width: 780px){
+			padding: 1.5rem .8rem;
+			width: 100%;
+		}
+
+		@media(max-width: 600px){
+			padding: 1rem .65rem;
+			width: 100%;
+		}
 	}
 }

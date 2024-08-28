@@ -2,146 +2,191 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  padding: 2rem 7rem;
+  padding: 1rem 5rem .65rem 5rem;
+  width: 100%;
   background-color: $mainColor;
+  z-index: 100;
   color: $whiteText;
-  /* box-shadow: inset -9px -9px 18px #041a2c,
-        inset 9px 9px 18px #0c4270; */
-}
+  position: fixed;
+  margin: auto;
 
-header h2 {
-  font-size: 38px;
-}
-
-nav {
-  display: flex;
-}
-.logoName {
-  text-shadow: 1px 1px 2px $secondaryColor;
-}
-nav a {
-  padding: 10px 15px;
-  margin: 0 10px;
-  transition: all 0.3s 0.2s;
-  border-radius: 5px;
-}
-
-nav a {
-  color: $whiteText;
-  text-decoration: none;
-}
-
-nav a:hover {
-  cursor: pointer;
-  color: $secondaryColor;
-  transform: scale(1.05);
-}
-
-nav a:focus {
-  color: $secondaryColor;
-}
-
-.downloadButtonSmall {
-  display: none;
-}
-
-header .navBtn {
-  padding: 5px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  color: $whiteText;
-  display: none;
-}
-
-.myDownloadButton {
-  // border: 1px solid red;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.downloadButton {
-  // margin-left: 600px;
-  border: 1px solid $secondaryColor;
-  background-color: rgba(24, 210, 110, 0.21);
-  padding: 0 40px;
-  border-radius: 20px;
-  color: $whiteText;
-  cursor: pointer;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.downloadIcon {
-  font-size: 20px;
-}
-
-@media all and (max-width: 1024px) {
-  header {
-    padding: 0 2rem;
+  @media(max-width: 1040px){
+    padding: 1rem 1rem .65rem 1rem;
   }
 
-  header .navBtn {
-    display: block;
-    opacity: 1;
-  }
-
-  .downloadButtonSmall {
-    display: block;
-    border: 1px solid $secondaryColor;
-    background-color: rgba(24, 210, 110, 0.21);
-    padding: 0 40px;
-    border-radius: 20px;
-    color: $whiteText;
-    cursor: pointer;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  header nav,
-  .myDownloadButton {
-    position: fixed;
-    padding: 40px 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
+  @media(max-width: 780px){
+    padding: .8rem 1rem .65rem 1rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  @media(max-width: 600px){
+    padding: .8rem 1rem .65rem 1rem;
+  }
+
+  .headLogo{
+    @media(max-width: 780px){
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  
+      .logoName {
+        //text-shadow: 1px 1px 2px $secondaryColor;
+        margin-left: .8rem;
+        color: rgb(61, 236, 128);
+        font-size: 2rem;
+  
+        @media(max-width: 780px){
+          font-size: 1.5rem;
+          margin-left: .55rem;
+        }
+        @media(max-width: 600px){
+          font-size: 1.35rem;
+        }
+      }
+      .logoImage{
+        width: 36px;
+
+        @media(max-width: 780px){
+          width: 28px;
+        }
+        @media(max-width: 600px){
+          width: 24px;
+        }
+      
+        img{
+          width: 100%;
+        }
+      }
+    }
+  
+    .menu{
+      .navBtn {
+        display: none;
+
+        @media(max-width: 780px){
+          display: block;
+          // padding: 5px;
+          background-color: transparent;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          color: $whiteText;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
-    background-color: $mainColor;
-    box-shadow: inset -11px 11px 7px #03121f66, inset 11px -11px 7px #0d4a7d;
-    transition: 1s;
-    transform: translateY(-100vh);
-    z-index: 100;
+    justify-content: space-between;
+
+    @media(max-width: 780px){
+      display: none;
+    }
+
+    .bookmarks{
+      @media(max-width: 600px){
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a {
+        padding: 10px 15px;
+        margin: 0 14px 0 0;
+        transition: all 0.3s 0.2s;
+        border-radius: 5px;
+        color: $whiteText;
+        text-decoration: none;
+        transition: 0.25s ease;
+        font-weight: 600;
+  
+        @media(max-width: 1040px){
+          margin: 0 .75rem 0 0;
+        }
+  
+        &:hover {
+          cursor: pointer;
+          color: $secondaryColor;
+        }
+        &:focus {
+          color: $secondaryColor;
+        }
+      }
+    }
+    
+    .downloadButtonSmall {
+      display: none;
+    }
   }
 
-  header .responsiveNav {
-    transform: none;
+  .activeNav{
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+
+    @media(max-width: 600px){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
   }
 
-  nav .navCloseBtn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 25px;
-  }
+  .myDownloadButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    @media(max-width: 600px){
+      width: 100%;
+    }
 
-  // .myDownloadButton{
-  //     width: 100%;
-  //     display: flex;
+    .downloadButton {
+      // margin-left: 600px;
+      border: 1px solid $secondaryColor;
+      background-color: rgba(24, 210, 110, 0.21);
+      padding: 0 40px;
+      border-radius: 20px;
+      color: $btnText;
+      cursor: pointer;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+
+      @media(max-width: 600px){
+        width: 80%;
+        margin-top: 1rem;
+      }
+  
+      .downloadIcon {
+        font-size: 20px;
+      }
+    }
+  
+    // @media(max-width: 780px){
+    //   display: none;
+    // }
+  }
+  // .activeDownloadBtns{
+  //   display: flex;
+  //   margin-top: 2rem;
   // }
-  .downloadButton {
-    margin: 0;
-    padding: 7px 40px;
-  }
 }

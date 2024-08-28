@@ -1,65 +1,102 @@
 .TargetsContainer {
-	// padding: 100px;
-	background-color: #fff;
+	background-color: $lightBg;
 	color: $mainColor;
 	text-align: center;
-	width: 80%;
-	margin: 5rem auto;
-}
-.titleHeader {
-	font-size: 34px;
+	width: 100%;
+	padding: 3rem 5rem;
 
-	&:after {
-		content: "";
-		display: block;
-		width: 15%;
-		height: 2px;
-		background-color: $secondaryColor;
-		margin: 1rem auto;
+	@media(max-width: 1040px){
+		padding: 2rem 1rem;
 	}
 }
 
+.targetHeading {
+	font-size: 1.8rem;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+	
+	@media(max-width: 780px){
+		font-size: 1.7rem;
+	}
+	@media(max-width: 600px){
+		font-size: 1.25rem;
+	}
+
+	// &:after {
+	// 	content: "";
+	// 	display: block;
+	// 	width: 20%;
+	// 	height: 2.5px;
+	// 	background-color: $mainColor;
+	// 	opacity: .8;
+	// 	margin: .5rem auto;
+
+	// 	@media(max-width: 600px){
+	// 		width: 25%;
+	// 	}
+	// 	@media(max-width: 330px){
+	// 		width: 30%;
+	// 	}
+	// }
+}
+
 .targetRow {
-	// border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row nowrap;
-	gap: 120px;
-	padding: 60px 0;
+	gap: 2rem;
+	margin-top: 3rem;
+
+	@media(max-width: 780px){
+		flex-flow: column nowrap;
+		margin-top: 2rem;
+	}
 }
 
 .card {
-	// border: 1px solid black;
 	padding: 70px 20px;
-	width: 300px;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 	border-radius: 20px;
 	background: #ffffff;
-	box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-}
-.card:hover {
-}
-.icon {
-	width: 60px;
-	height: 60px;
-	object-fit: cover;
-}
-.title {
-	text-shadow: none;
-	padding: 20px 0;
-	font-size: 20px;
+
+	@media(max-width: 780px){
+		width: 100%;
+	}
 }
 
-@media all and (max-width: 840px) {
-	.titleHeader {
-		font-size: 1.5rem;
+.targetIcon {
+	width: 120px;
+}
+.targetTitle {
+	text-shadow: none;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 1rem;
+	padding: 0;
+
+	@media(max-width: 780px){
+		font-size: 22px;
 	}
-	.targetRow {
-		flex-flow: column nowrap;
+
+	@media(max-width: 600px){
+		font-size: 16px;
 	}
-	.card {
-		width: 100%;
+}
+.targetDesc{
+	font-size: 16px;
+	opacity: .85;
+	margin-top: 4px;
+
+	@media(max-width: 780px){
+		font-size: 18px;
+	}
+
+	@media(max-width: 600px){
+		font-size: 14px;
 	}
 }

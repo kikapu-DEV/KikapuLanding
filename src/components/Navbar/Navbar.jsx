@@ -1,41 +1,55 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import kikapuLogo from "../../assets/kikapuLogo.png";
 
 export const Navbar = () => {
   const navRef = useRef();
+  const btnRef = useRef();
+  const [navActive, setNavActive] = useState(false);
 
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsiveNav");
-  };
+  function handleNavDisplay (){
+    setNavActive(!navActive);
+    navRef.current.classList.toggle("activeNav");
+  }
 
   return (
     <header>
-      <h2 className="logoName">Kikapuapp</h2>
-      <nav ref={navRef}>
-        <a hrefLang="#">Home</a>
-        <a href={"#about"}>About</a>
-        <a href={"#features"}>Features</a>
-        <a href={"#team"}>Team</a>
-        <a href={"#contact"}>Contact</a>
-        <a
-          className="downloadButtonSmall"
-          href="https://play.google.com/store/apps/details?id=com.eldagenius.kikapustudents&hl=en-US&ah=9PoTnsKToiRY3oAU6-1IQbUEWVs"
-        >
-          Download <BiDownload className="downloadIcon" />{" "}
-        </a>
-        <button className="navBtn navCloseBtn" onClick={showNavbar}>
-          <FaTimes />
-        </button>
-      </nav>
-      <div className="myDownloadButton">
-        <button className="downloadButton">Join waitlist</button>
-        {/* <button className="downloadButton">Download <BiDownload className="downloadIcon"/> </button> */}
+      <div className="headLogo">
+        <div className="logo">
+          <div className="logoImage">
+            <img src={kikapuLogo} alt="kikapuLogo" />
+          </div>
+          <h2 className="logoName">Kikapuapp</h2>
+        </div>
+
+        <div className="menu">
+          {!navActive ? (
+            <button className="navBtn" onClick={handleNavDisplay}>
+              <FaBars />
+            </button>
+          ) : (
+            <button className="navBtn navCloseBtn" onClick={handleNavDisplay}>
+              <FaTimes />
+            </button>
+          )}
+        </div>
       </div>
 
-      <button className="navBtn" onClick={showNavbar}>
-        <FaBars />
-      </button>
+      <nav ref={navRef}>
+        <div className="bookmarks">
+          <a hrefLang="#">Home</a>
+          <a href={"#about"}>About</a>
+          {/* <a href={"#features"}>Features</a> */}
+          <a href={"#team"}>Team</a>
+          <a href={"#contact"}>Contact</a>
+        </div>
+
+        <div className="myDownloadButtons" ref={btnRef}>
+          <button className="downloadButton">Join waitlist</button>
+          {/* <button className="downloadButton">Download <BiDownload className="downloadIcon"/> </button> */}
+        </div>
+      </nav>
     </header>
   );
 };

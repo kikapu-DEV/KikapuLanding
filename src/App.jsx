@@ -1,9 +1,8 @@
 import "./App.scss";
 import { Footer } from "./components/Footer/Footer";
-import { Navbar } from "./components/Navbar/index";
 import { Features } from "./pages/Features";
 import { CheckApp } from "./pages/CheckApp";
-import Faqs from "./pages/Faqs/Faqs";
+//import Faqs from "./pages/Faqs/Faqs";
 import { Target } from "./pages/Target/Target";
 import { Home } from "./pages/Home/Home";
 import { Team } from "./pages/Team/index";
@@ -14,16 +13,15 @@ import { ContactUs } from "./pages/ContactUs";
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Home />
       <Target />
       <WhyUs />
-      <CheckApp />
-      <Features />
+      {/* <CheckApp /> */}
+      {/* <Features /> */}
       <Partners />
       {/* <Faqs /> */}
       <Team />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <Footer />
     </div>
   );

@@ -5,19 +5,22 @@ import AOS from "aos";
 export const Target = () => {
 	const targetList = [
 		{
-			icon: images.students,
+			id: "1",
+			icon: images.people,
 			title: "Students & Parents",
 			class: "wallet",
 			desc: "Top-up the prepaid meal account and have peace of mind.",
 		},
 		{
-			icon: images.vendor,
+			id: "2",
+			icon: images.stall,
 			title: "Restaurants & Vendors",
 			class: "marketPlace",
-			desc: "Partner with KikapuApp & Redefine the ordering processes for walk-in customers.",
+			desc: "Partner with KikapuApp & Redefine the ordering processes for customers.",
 		},
 		{
-			icon: images.parents,
+			id: "3",
+			icon: images.restaurant,
 			title: "Restaurants & Walk-in Customers",
 			class: "foodCredit",
 			desc: "Make reservations, preorders, and pay for meals with ease.",
@@ -25,22 +28,23 @@ export const Target = () => {
 	];
 
 	useEffect(() => {
-		AOS.init({ duration: 2000 });
+		AOS.init({ duration: 1000 });
 	}, []);
+
 	return (
 		<div className='TargetsContainer'>
-			<h2 className='titleHeader'>
-				<span style={{ color: "#18D26E" }}>WHO IS</span> KIKAPUAPP FOR?
-			</h2>
+			<div className='targetHeading'>
+				<span style={{ color: "#2DA96B" }}>Who Is</span> KikapuApp For?
+			</div>
 
 			<div className='targetRow'>
-				{targetList.map((item, index) => (
-					<div key={index} className='target-card' data-aos='zoom-in'>
+				{targetList.map((item, id) => (
+					<div key={id} className='target-card' data-aos='zoom-in'>
 						<div>
-							<img src={item.icon} alt='Icon' className='icon' />
+							<img src={item.icon} alt='Icon' className='targetIcon' />
 						</div>
-						<h4 className='title'>{item.title}</h4>
-						<p className='desc'>{item.desc}</p>
+						<div className='targetTitle'>{item.title}</div>
+						<p className='targetDesc'>{item.desc}</p>
 					</div>
 				))}
 			</div>
