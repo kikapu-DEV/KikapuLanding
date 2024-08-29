@@ -11,6 +11,9 @@ import credit from "../assets/icons/credit.svg";
 import orderReservation from "../assets/icons/orderReservation.svg";
 import paymentOptions from "../assets/icons/paymentOptions.svg";
 
+//In partnership with
+import msStartup from "../assets/msRocket.png";
+
 export default {
   people,
   restaurant,
@@ -20,5 +23,6 @@ export default {
   analytics,
   credit,
   orderReservation,
-  paymentOptions
+  paymentOptions,
+  msStartup
 }

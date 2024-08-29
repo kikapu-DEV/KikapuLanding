@@ -1,5 +1,5 @@
 .whyContainer {
-	background-color: $secondaryColor;
+	background-color: $darkSpringGreen;
 	padding: 3rem 5rem;
 	display: flex;
 	flex-direction: column;
@@ -25,25 +25,25 @@
 		font-size: 1.7rem;
 	}
 	@media(max-width: 600px){
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 	}
 
-	// &:after {
-	// 	content: "";
-	// 	display: block;
-	// 	width: 20%;
-	// 	height: 2.5px;
-	// 	background-color: $mainColor;
-	// 	opacity: .8;
-	// 	margin: .5rem auto;
+	&:after {
+		content: "";
+		display: block;
+		width: 25%;
+		height: 2.5px;
+		background-color: $mainColor;
+		opacity: .8;
+		margin: .5rem auto;
 
-	// 	@media(max-width: 600px){
-	// 		width: 25%;
-	// 	}
-	// 	@media(max-width: 330px){
-	// 		width: 30%;
-	// 	}
-	// }
+		@media(max-width: 600px){
+			width: 25%;
+		}
+		@media(max-width: 330px){
+			width: 30%;
+		}
+	}
 }
 
 .reasons-container {
@@ -63,6 +63,7 @@
 	}
 
 	@media(max-width: 600px){
+		gap: .7rem;
 		grid-template-columns: 1fr;
 	}
 
@@ -77,30 +78,31 @@
 	
 		.reasonTitle{
 			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: center;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
 			width: 100%;
 	
 			.whyIcon {
-				width: 40px;
+				width: 32px;
 
 				@media(max-width: 780px){
-					width: 32px;
+					width: 28px;
 				}
 				@media(max-width: 600px){
-					width: 28px;
+					width: 24px;
 				}
 			}
 
 			.whyText {
 				font-weight: 600;
-				font-size: 1.25rem;
-				color: $whiteText;
-				width: 100%;
+				font-size: 1.35rem;
+				color: $aquaMarine;
 				text-align: left;
-				margin-top: 1rem;
 
+				@media(max-width: 1040px){
+					font-size: 1.25rem;
+				}
 				@media(max-width: 780px){
 					font-size: 1.15rem;
 				}
@@ -112,16 +114,16 @@
 	
 		.reasonDesc{
 			font-size: 16px;
-			color: $whiteText;
-			opacity: .8;
+			color: $lightBg;
+			opacity: .7;
 			margin-top: 1rem;
 	
-			@media (max-width: 780px){
+			@media (max-width: 1040px){
 				font-size: 14px;
 			}
 			@media (max-width: 600px){
 				font-size: 12px;
-				margin-top: .5rem;
+				margin-top: .75rem;
 			}
 		}
 	

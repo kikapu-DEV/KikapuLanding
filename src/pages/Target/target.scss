@@ -4,6 +4,9 @@
 	text-align: center;
 	width: 100%;
 	padding: 3rem 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	@media(max-width: 1040px){
 		padding: 2rem 1rem;
@@ -19,25 +22,25 @@
 		font-size: 1.7rem;
 	}
 	@media(max-width: 600px){
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 	}
 
-	// &:after {
-	// 	content: "";
-	// 	display: block;
-	// 	width: 20%;
-	// 	height: 2.5px;
-	// 	background-color: $mainColor;
-	// 	opacity: .8;
-	// 	margin: .5rem auto;
+	&:after {
+		content: "";
+		display: block;
+		width: 25%;
+		height: 2.5px;
+		background-color: $mainColor;
+		opacity: .8;
+		margin: .35rem auto;
 
-	// 	@media(max-width: 600px){
-	// 		width: 25%;
-	// 	}
-	// 	@media(max-width: 330px){
-	// 		width: 30%;
-	// 	}
-	// }
+		@media(max-width: 600px){
+			width: 25%;
+		}
+		@media(max-width: 330px){
+			width: 30%;
+		}
+	}
 }
 
 .targetRow {
@@ -51,18 +54,24 @@
 	@media(max-width: 780px){
 		flex-flow: column nowrap;
 		margin-top: 2rem;
+		gap: 1rem;
 	}
 }
 
-.card {
-	padding: 70px 20px;
+.target-card {
 	width: 30%;
+	padding: 1.5rem 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
 	border-radius: 20px;
-	background: #ffffff;
+	background-color: darken($lightBg, 3.5%);
+	transition: .15s ease;
+
+	&:hover{
+		background-color: darken($lightBg, 6%);
+	}
 
 	@media(max-width: 780px){
 		width: 100%;
@@ -71,11 +80,14 @@
 
 .targetIcon {
 	width: 120px;
+	@media(max-width: 600px){
+		width: 90px;
+	}
 }
 .targetTitle {
 	text-shadow: none;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 900;
 	margin-top: 1rem;
 	padding: 0;
 
@@ -91,6 +103,8 @@
 	font-size: 16px;
 	opacity: .85;
 	margin-top: 4px;
+	max-width: 500px;
+	font-weight: 600;
 
 	@media(max-width: 780px){
 		font-size: 18px;

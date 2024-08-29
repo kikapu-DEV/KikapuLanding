@@ -1,91 +1,185 @@
 .teamContainer {
-	width: 80%;
-	margin: 5rem auto;
-	color: $mainColor;
-}
+	width: 100%;
+	width: 100%;
+	background-color: lighten($lightBg, 2.5%);
+	padding: 3rem 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-.teamContainer h2 {
-	text-align: center;
-	font-size: 34px;
-	text-transform: uppercase;
-}
+	@media(max-width: 1040px){
+		padding: 2rem 1rem;
+	}
 
-.teams-header {
-	&:after {
-		content: "";
-		display: block;
-		width: 15%;
-		height: 2px;
-		background-color: $secondaryColor;
-		margin: 1rem auto;
+	@media(max-width: 600px){
+		padding: 2rem .65rem;
 	}
 }
 
-.teamContainer p {
-	text-align: center;
-	margin: 20px 0;
+.teamHeading {
+	font-size: 1.8rem;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+	
+	@media(max-width: 780px){
+		font-size: 1.7rem;
+	}
+	@media(max-width: 600px){
+		font-size: 1.5rem;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 30%;
+		height: 2.5px;
+		background-color: $mainColor;
+		opacity: .8;
+		margin: .5rem auto;
+
+		@media(max-width: 600px){
+			width: 25%;
+		}
+		@media(max-width: 330px){
+			width: 30%;
+		}
+	}
 }
+
+.teamDesc {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 18px;
+	color: $mainColor;
+	opacity: .85;
+	max-width: 700px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+
+	@media(max-width: 1040px){
+		font-size: 16px;
+	}
+	@media(max-width: 780px){
+		font-size: 14px;
+	}
+	@media(max-width: 380px){
+		font-size: 12px;
+	}
+}
+
 
 .teamList {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
-	margin: 4rem 0;
-	gap: 2.5rem;
-}
+	align-items: center;
+	margin-top: 3rem;
+	gap: 1.4rem;
 
-.personCard {
-	text-align: center;
-}
-
-.personImg {
-	width: 250px;
-}
-
-.personImg img {
-	width: 15rem;
-	height: 15rem;
-	object-fit: cover;
-	border-radius: 50%;
-	border: 2px solid $secondaryColor;
-}
-
-.personCard p {
-	margin: 1rem 0;
-}
-
-.personContent {
-	margin: 1rem 0;
-
-	.person-name {
-		font-size: 1.5rem;
-		font-weight: bold;
-	}
-
-	.person-role {
-		font-size: 1.2rem;
-		font-weight: 500;
-	}
-}
-.socials {
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	font-size: 24px;
-
-	.social-item:hover {
-		cursor: pointer;
-		color: $secondaryColor;
-	}
-}
-
-@media all and (max-width: 840px) {
-	.teamContainer {
-		padding: 20px;
-	}
-}
-@media all and (max-width: 280px) {
-	.personCard img {
+	@media(max-width: 780px){
+		gap: 1rem;
 		width: 100%;
+	}
+	@media(max-width: 600px){
+		margin-top: 2rem;
+		overflow-x: auto;
+		justify-content: flex-start;
+	}
+
+	.personCard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: darken($lightBg, 2.5%);
+		padding: 1.5rem 3rem;
+		border-radius: 10px;
+		transition: .15s ease;
+
+		&:hover{
+			background-color: darken($lightBg, 5%);
+		}
+
+		@media(max-width: 780px){
+			padding: 1.5rem 2.5rem;
+		}
+		@media(max-width: 780px){
+			padding: 1.5rem 1rem;
+			min-width: 180px;
+		}
+
+		.personImg {
+			width: 120px;
+
+			@media(max-width: 780px){
+				width: 100px;
+			}
+			@media(max-width: 380px){
+				width: 90px;
+			}
+
+			img {
+				width: 100%;
+				object-fit: cover;
+				border-radius: 50%;
+				border: 2.5px solid darken($lightBg, 25%);
+			}
+		}
+	
+		.personContent {
+			margin-top: 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+		
+			.person-name {
+				font-size: 1.5rem;
+				font-weight: 700;
+				text-align: center;
+				color: $mainColor;
+
+				@media(max-width: 780px){
+					font-size: 1.25rem;
+				}
+				@media(max-width: 600px){
+					font-size: 1.05rem;
+				}
+				
+			}
+		
+			.person-role {
+				font-size: 1.15rem;
+				font-weight: 500;
+				text-align: center;
+				color: $mainColor;
+				margin-top: 4px;
+
+				@media(max-width: 780px){
+					font-size: 1rem;
+				}
+				@media(max-width: 600px){
+					font-size: .85rem;
+				}
+			}
+	
+			.socials {
+				margin-top: 1.4rem;
+				display: flex;
+				gap: 20px;
+				justify-content: center;
+				font-size: 22px;
+				color: $mainColor;
+
+				 * {
+					transition: .1s ease;
+				 }
+			
+				.social-item:hover {
+					cursor: pointer;
+					color: lighten($mainColor, 20%);
+				}
+			}
+		}
 	}
 }

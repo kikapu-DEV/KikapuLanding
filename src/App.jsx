@@ -18,7 +18,7 @@ function App() {
       <WhyUs />
       {/* <CheckApp /> */}
       {/* <Features /> */}
-      <Partners />
+      {/* <Partners /> */}
       {/* <Faqs /> */}
       <Team />
       {/* <ContactUs /> */}

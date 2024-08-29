@@ -2,10 +2,17 @@ import bruce from "../../assets/profiles/bruce.png";
 import sande from "../../assets/profiles/sande.png";
 import elie from "../../assets/profiles/elie.png";
 import { BsLinkedin, BsTwitter } from "react-icons/bs";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export const Team = () => {
+  useEffect(() => {
+		AOS.init({ duration: 1000 });
+	}, []);
+
   const teamInfo = [
     {
+      id: "1",
       image: bruce,
       name: "Bruce Matui",
       role: "Founder",
@@ -13,6 +20,7 @@ export const Team = () => {
       twitter: "link",
     },
     {
+      id: "2",
       image: sande,
       name: "Peter Sande",
       role: "Project Manager",
@@ -20,6 +28,7 @@ export const Team = () => {
       twitter: "link",
     },
     {
+      id: "3",
       image: elie,
       name: "Elie Muluke",
       role: "Backend Engineer",
@@ -29,26 +38,27 @@ export const Team = () => {
   ];
   return (
     <div className="teamContainer" id="team">
-      <h2 className="teams-header">
-        Meet the <span style={{ color: "#18D26E" }}>team</span>
-      </h2>
-      <p style={{ textAlign: "center" }}>
+      <div className='teamHeading'>
+				<span style={{ color: "#2DA96B" }}>Meet</span> The Team
+			</div>
+
+      <p className="teamDesc">
         At the heart of our success, there's a dedicated team that makes it all
         possible. Get to know the talented individuals who drive our vision,
-        expertise, and passion. We're a diverse group with a common goal
+        expertise, and passion. We're a diverse group with a common goal.
       </p>
 
       <div className="teamList">
-        {teamInfo.map((list, index) => {
+        {teamInfo.map((list, id) => {
           return (
-            <div className="personCard" key={index}>
+            <div className="personCard" key={id} data-aos='zoom-in'>
               <div className="personImg">
                 <img src={list.image} alt="person" />
               </div>
 
               <div className="personContent">
-                <p className="person-name">{list.name}</p>
-                <p className="person-role">{list.role}</p>
+                <div className="person-name">{list.name}</div>
+                <div className="person-role">{list.role}</div>
                 <div className="socials">
                   <BsLinkedin title="linkedin" className="social-item" />
                   <BsTwitter title="twitter" className="social-item" />
