@@ -1,7 +1,12 @@
 import { images } from "../../constants";
 import { useEffect } from "react";
+import AOS from "aos";
 
 export const WhyUs = () => {
+  useEffect(() => {
+		AOS.init({ duration: 1000 });
+	}, []);
+  
   const reasons = [
     {
       id: "1",
