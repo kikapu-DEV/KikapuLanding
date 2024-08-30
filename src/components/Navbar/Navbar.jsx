@@ -39,16 +39,15 @@ export const Navbar = () => {
       <nav ref={navRef}>
         <div className="bookmarks">
           <a hrefLang="#">Home</a>
-          <a href={"#about"}>About</a>
+          <a href={"#about"}>Features</a>
           {/* <a href={"#features"}>Features</a> */}
           <a href={"#team"}>Team</a>
-          <a href={"#contact"}>Contact</a>
+          <a href={"#footer"}>Contact</a>
         </div>
 
-        <div className="myDownloadButtons" ref={btnRef}>
+        {/* <div className="myDownloadButtons" ref={btnRef}>
           <button className="downloadButton">Join waitlist</button>
-          {/* <button className="downloadButton">Download <BiDownload className="downloadIcon"/> </button> */}
-        </div>
+        </div> */}
       </nav>
     </header>
   );

@@ -59,9 +59,10 @@
 			color: $secondaryColor;
 			text-decoration: none;
 			font-size: 1.2rem;
+			font-weight: 600;
 
 			&:hover{
-				color: lighten($secondaryColor, 20%);
+				color: lighten($secondaryColor, 25%);
 			}
 
 			@media(max-width: 1040px){
@@ -74,8 +75,8 @@
 	}
 
 	.pipe {
-		width: 1.65px;
-		background-color: $aquaMarine;
+		width: 1.85px;
+		background-color: lighten($secondaryColor, 20%);
 		margin: 0 .75rem;
 		height: 1.5rem;
 
@@ -89,13 +90,23 @@
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
-	font-size: 24px;
-	color: $secondaryColor;
-	cursor: pointer;
 
-	@media(max-width: 780px){
-		font-size: 18px;
+	.f_link{
+		font-size: 24px;
+		color: $secondaryColor;
+		cursor: pointer;
+		transition: .3s ease;
+		
+		@media(max-width: 780px){
+			font-size: 18px;
+		}
+
+		&:hover{
+			color: lighten($secondaryColor, 25%);
+			transform: translateY(-6px)
+		}
 	}
+
 	@media(max-width: 600px){
 		margin-top: 1rem;
 	}
@@ -106,7 +117,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid lighten($mainColor, 20%);
+	//border: 2px solid lighten($mainColor, 20%);
+	box-shadow: 0 0 6px 2px lighten($mainColor, 30%);
 	padding: 1.25rem 1rem;
 	border-radius: 10px;
 	background-color: lighten($mainColor, 5%);
@@ -167,7 +179,7 @@
 
 .copyright {
 	text-align: center;
-	color: lighten($mainColor, 60%);
+	color: lighten($mainColor, 70%);
 	margin-top: 2rem;
 	font-size: 18px; 
 	font-weight:600;

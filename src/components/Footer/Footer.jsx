@@ -3,7 +3,7 @@ import {images} from "../../constants";
 
 export const Footer = () => {
 	return (
-		<div className='footerContainer'>
+		<div className='footerContainer' id="footer">
 			<div className='footerFlex'>
 				<div className='footerLogo'>
 					Kikapuapp<span style={{ color: "#18D26E" }}>.</span>
@@ -23,20 +23,12 @@ export const Footer = () => {
 							</a>
 						</div>
 					</div>
-
-					{/* <div className='bottomInfno'>
-						<p style={{ textAlign: "center" }} className='copyRemove'>
-							{" "}
-							&copy; Copyright {new Date().getFullYear()} Kikapuapp. All Right
-							Reserved.
-						</p>
-					</div> */}
 				</div>
 
 				<div className='FooterSocials'>
-					<BsLinkedin />
-					<BsTwitter />
-					<BsInstagram />
+					<BsLinkedin className="f_link" />
+					<BsTwitter className="f_link" />
+					<BsInstagram className="f_link" />
 				</div>
 			</div>
 

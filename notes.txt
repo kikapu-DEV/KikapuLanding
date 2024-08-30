@@ -1,0 +1,55 @@
+<article>
+  <div className="whyBg">
+    <img src={images.foodPattern} alt="pattern" />
+  </div>
+  <div className='TargetsContainer'>
+    <div className='targetHeading'>
+      <span style={{ color: "#2DA96B" }}>Who Is</span> KikapuApp For?
+    </div>
+
+    <div className='targetRow'>
+      {targetList.map((item, id) => (
+        <div key={id} className='target-card' data-aos='zoom-in'>
+          <div>
+            <img src={item.icon} alt='Icon' className='targetIcon' />
+          </div>
+          <div className='targetTitle'>{item.title}</div>
+          <p className='targetDesc'>{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</article>
+
+
+article{
+	position: relative;
+	display: block;
+}
+.whyBg{
+	width: 100%;
+	
+	img{
+		width: 100%;
+	}
+}
+
+.TargetsContainer {
+	position: absolute;
+	top: 0;
+	background-color: hsl(0, 0%, 50%, .2);
+	color: $mainColor;
+	text-align: center;
+	width: 100%;
+	padding: 3rem 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media(max-width: 1040px){
+		padding: 2rem 1rem;
+	}
+}
+
+
+The image is too big and is displaying with it's original height. How do I make it the same height as the TargetsContainer?

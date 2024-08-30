@@ -32,22 +32,27 @@ export const Target = () => {
 	}, []);
 
 	return (
-		<div className='TargetsContainer'>
-			<div className='targetHeading'>
-				<span style={{ color: "#2DA96B" }}>Who Is</span> KikapuApp For?
+		<article className="targetArticle">
+			<div className="whyBg">
+				<img src={images.foodPattern} alt="pattern" />
 			</div>
+			<div className='TargetsContainer'>
+				<div className='targetHeading'>
+					<span style={{ color: "#2DA96B" }}>Who Is</span> KikapuApp For?
+				</div>
 
-			<div className='targetRow'>
-				{targetList.map((item, id) => (
-					<div key={id} className='target-card' data-aos='zoom-in'>
-						<div>
-							<img src={item.icon} alt='Icon' className='targetIcon' />
+				<div className='targetRow'>
+					{targetList.map((item, id) => (
+						<div key={id} className='target-card' data-aos='zoom-in'>
+							<div>
+								<img src={item.icon} alt='Icon' className='targetIcon' />
+							</div>
+							<div className='targetTitle'>{item.title}</div>
+							<p className='targetDesc'>{item.desc}</p>
 						</div>
-						<div className='targetTitle'>{item.title}</div>
-						<p className='targetDesc'>{item.desc}</p>
-					</div>
-				))}
+					))}
+				</div>
 			</div>
-		</div>
+		</article> 
 	);
 };

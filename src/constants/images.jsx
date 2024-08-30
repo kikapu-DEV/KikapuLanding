@@ -1,4 +1,5 @@
 //Who is KikapuApp for?
+import foodPattern from "../assets/foodPattern.jpg";
 import people from "../assets/icons/people.svg";
 import stall from "../assets/icons/stall.svg";
 import restaurant from "../assets/icons/restaurant-eat.svg";
@@ -11,13 +12,18 @@ import credit from "../assets/icons/credit.svg";
 import orderReservation from "../assets/icons/orderReservation.svg";
 import paymentOptions from "../assets/icons/paymentOptions.svg";
 
+//teamBg
+import linePattern from "../assets/linePattern.jpg";
+
 //In partnership with
 import msStartup from "../assets/msRocket.png";
 
 export default {
+  foodPattern,
   people,
   restaurant,
   stall,
+  linePattern,
   inventory,
   POS,
   analytics,
