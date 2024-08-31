@@ -37,8 +37,9 @@
 	// background-position: center;
 	// background-repeat: no-repeat;
 	// background-size: cover;
-	background-color: hsl(168, 56%, 98%, .35);
-	color: $mainColor;
+	//background-color: hsl(168, 56%, 98%, .35);
+	//background-color: $darkSpringGreen;
+	//background-image: linear-gradient(to top, #29c276, #37ca8a, #46d19e, #58d8af, #6bdfc0, #7de4cd, #90e9d8, #a3ede2, #b8f2eb, #cdf6f3, #e2fbfa, #f7ffff);
 	text-align: center;
 	width: 100%;
 	height: 100%;
@@ -56,6 +57,7 @@
 	font-size: 1.8rem;
 	font-weight: 600;
 	font-family: 'Kanit', sans-serif;
+	color: $mainColor;
 	// background-color: $lightBg;
 	// padding: .5rem 1rem;
 	// border-radius: 4px;
@@ -108,6 +110,7 @@
 	justify-content: flex-start;
 	border-radius: 10px;
 	background-color: rgb(240, 245, 245);
+	//background-color: lighten($mainColor, 7%);
 	height: 250px;
 	box-shadow: 0 0 6px 4px rgb(196, 189, 178);
 	transition: 0.35s ease;
@@ -143,6 +146,8 @@
 		font-weight: 900;
 		margin-top: 1rem;
 		padding: 0;
+		//color: $aquaMarine;
+		color: $mainColor;
 	
 		@media(max-width: 780px){
 			font-size: 22px;
@@ -154,10 +159,12 @@
 	}
 	.targetDesc{
 		font-size: 16px;
-		opacity: .85;
+		opacity: .75;
 		margin-top: 4px;
 		max-width: 500px;
 		font-weight: 600;
+		//color: $lightBg;
+		color: $mainColor;
 	
 		@media(max-width: 1040px){
 			font-size: 16px;

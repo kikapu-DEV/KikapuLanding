@@ -4,7 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 580px;
+	height: 480px;
 
 	@media(max-width: 1040px){
     height: 540px;
@@ -40,7 +40,9 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: hsl(168, 56%, 98%, .75);
+	//background-color: hsl(168, 56%, 98%, .75);
+	background-color: $darkSpringGreen;
+	//background-image: linear-gradient(to top, #29c276, #58cc8a, #79d69f, #97dfb3, #b3e8c7, #bceeda, #c9f3e9, #daf8f5, #e3f9fe, #effaff, #f9fcff, #ffffff);
 	padding: 3rem 5rem;
 	display: flex;
 	flex-direction: column;
@@ -60,6 +62,7 @@
 	font-size: 1.8rem;
 	font-weight: 600;
 	font-family: 'Kanit', sans-serif;
+	color: $mainColor;
 	
 	@media(max-width: 780px){
 		font-size: 1.7rem;
@@ -91,7 +94,8 @@
 	margin-top: 1rem;
 	font-size: 18px;
 	color: $mainColor;
-	//opacity: .85;
+	//color: $lightBg;
+	//opacity: .75;
 	max-width: 700px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -129,8 +133,10 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-		background-color: rgb(240, 245, 245);
-		box-shadow: 0 0 6px 3px rgb(196, 189, 178);
+		//background-color: rgb(240, 245, 245);
+		//box-shadow: 0 0 6px 3px rgb(196, 189, 178);
+		background-color: lighten($mainColor, 5%);
+		//box-shadow: 0 0 6px 3px lighten($secondaryColor, 12.5%);
 		padding: 1.5rem 3rem;
 		border-radius: 10px;
 		transition: .15s ease;
@@ -172,7 +178,8 @@
 				font-size: 1.5rem;
 				font-weight: 700;
 				text-align: center;
-				color: $mainColor;
+				//color: $mainColor;
+				color: darken($lightBg, 10%);
 
 				@media(max-width: 780px){
 					font-size: 1.25rem;
@@ -180,14 +187,15 @@
 				@media(max-width: 600px){
 					font-size: 1.05rem;
 				}
-				
 			}
 		
 			.person-role {
 				font-size: 1.15rem;
 				font-weight: 500;
 				text-align: center;
-				color: $mainColor;
+				//color: $mainColor;
+				color: $lightBg;
+				opacity: .7;
 				margin-top: 4px;
 
 				@media(max-width: 780px){
@@ -204,7 +212,8 @@
 				gap: 20px;
 				justify-content: center;
 				font-size: 22px;
-				color: $mainColor;
+				//color: $mainColor;
+				color: $secondaryColor;
 
 				 * {
 					transition: .1s ease;
@@ -212,7 +221,7 @@
 			
 				.social-item:hover {
 					cursor: pointer;
-					color: lighten($mainColor, 20%);
+					color: lighten($secondaryColor, 20%);
 				}
 			}
 		}

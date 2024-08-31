@@ -14,7 +14,7 @@ export const Target = () => {
 		{
 			id: "2",
 			icon: images.stall,
-			title: "Restaurants & Vendors",
+			title: "Vendors",
 			class: "marketPlace",
 			desc: "Partner with KikapuApp & Redefine the ordering processes for customers.",
 		},
@@ -38,12 +38,13 @@ export const Target = () => {
 			</div>
 			<div className='TargetsContainer'>
 				<div className='targetHeading'>
-					<span style={{ color: "#2DA96B" }}>Who Is</span> KikapuApp For?
+					{/* <span style={{ color: "#101127" }}>Who Is</span> KikapuApp For? */}
+					Who Is KikapuApp For?
 				</div>
 
 				<div className='targetRow'>
 					{targetList.map((item, id) => (
-						<div key={id} className='target-card' data-aos='zoom-in'>
+						<div key={id} className='target-card' >
 							<div>
 								<img src={item.icon} alt='Icon' className='targetIcon' />
 							</div>

@@ -44,7 +44,7 @@ export const Team = () => {
       </div>
       <div className="teamContainer" id="team">
         <div className='teamHeading'>
-          <span style={{ color: "#2DA96B" }}>Meet</span> The Team
+          <span style={{ color: "#DCE7E4" }}>Meet</span> The Team
         </div>
 
         <p className="teamDesc">
@@ -56,10 +56,10 @@ export const Team = () => {
         <div className="teamList">
           {teamInfo.map((list, id) => {
             return (
-              <div className="personCard" key={id} data-aos='zoom-in'>
-                <div className="personImg">
-                  <img src={list.image} alt="person" />
-                </div>
+              <div className="personCard" key={id} >
+                 {/* <div className="personImg">
+                   <img src={list.image} alt="person" />
+                 </div> */}
 
                 <div className="personContent">
                   <div className="person-name">{list.name}</div>

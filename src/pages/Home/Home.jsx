@@ -16,17 +16,20 @@ export const Home = () => {
       <div className="homeContainer">
         <img src={kikapuLogo} alt="kikapu" className="logoHero" />
 
+        {/* <div className="title">
+          Everything Food, Restaurants & Payments
+        </div> */}
+
         <div className="title">
-          Everything food, restaurants and payments
+          KIKAPU: Your Dining Companion
+        </div>
+
+        <div className="subTitle">
+          Discover a World of Restaurants, Countless Flavors and New Age Dining Experiences.
         </div>
 
         <div className="desc">
-          The all-in-one app for restaurants to manage inventory,
-          manage orders and reservations, receive payments, access credits and
-          view business analytics in real time. Order
-          delicious meals, manage pre-paid meal accounts, make payments and
-          access credits on the same while making "bid-able"
-          experiences in restaurants.
+        KIKAPU is more than just a food app; it's your personal dining companion, connecting you to a vibrant culinary scene and making it easier than ever to discover, reserve, and enjoy dining experiences.
         </div>
 
         <div className="appLinks">

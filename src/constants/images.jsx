@@ -18,6 +18,10 @@ import linePattern from "../assets/linePattern.jpg";
 //In partnership with
 import msStartup from "../assets/msRocket.png";
 
+//feature head
+import customers from "../assets/icons/customerEating.svg";
+import restHead from "../assets/icons/restaurantPost.svg";
+
 export default {
   foodPattern,
   people,
@@ -30,5 +34,7 @@ export default {
   credit,
   orderReservation,
   paymentOptions,
-  msStartup
+  msStartup,
+  customers,
+  restHead
 }
