@@ -21,7 +21,7 @@
 	
 	img{
 		width: 100%;
-		opacity: .2;
+		opacity: .1;
 
 		@media(max-width: 780px){
 			height: 100%;
@@ -113,11 +113,11 @@
 	//background-color: lighten($mainColor, 7%);
 	height: 250px;
 	box-shadow: 0 0 6px 4px rgb(196, 189, 178);
-	transition: 0.35s ease;
+	transition: 0.2s ease-in-out;
 
 	&:hover{
 		cursor: pointer;
-		box-shadow: 0 0 8px 2px $secondaryColor;
+		box-shadow: 0 0 8px 2px lighten($mainColor, 20%);
 
 		.targetIcon {
 			scale: 1.15;
