@@ -26,9 +26,15 @@ export const Footer = () => {
 				</div>
 
 				<div className='FooterSocials'>
-					<BsLinkedin className="f_link" />
-					<BsTwitter className="f_link" />
-					<BsInstagram className="f_link" />
+					<a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+						<BsLinkedin className="f_link" />
+					</a>
+					<a href="https://x.com/Kikapuapp" target="_blank" rel="noopener noreferrer">
+						<BsTwitter className="f_link" />
+					</a>
+					<a href="https://www.instagram.com/kikapufoods/" target="_blank" rel="noopener noreferrer">
+						<BsInstagram className="f_link" />
+					</a>
 				</div>
 			</div>
 

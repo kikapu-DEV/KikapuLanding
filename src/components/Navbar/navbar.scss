@@ -4,25 +4,21 @@ header {
   align-items: center;
   padding: 1rem 5rem .65rem 5rem;
   width: 100%;
-  background-color: $mainColor;
   z-index: 100;
-  color: $whiteText;
   position: fixed;
   margin: auto;
+  background-color: rgb(250, 253, 252);
+  // max-width: 1600px;
 
   @media(max-width: 1040px){
     padding: 1rem 1rem .65rem 1rem;
   }
 
   @media(max-width: 780px){
-    padding: .8rem 1rem .65rem 1rem;
     flex-direction: column;
     justify-content: flex-start;
   }
 
-  @media(max-width: 600px){
-    padding: .8rem 1rem .65rem 1rem;
-  }
 
   .headLogo{
     @media(max-width: 780px){
@@ -40,24 +36,23 @@ header {
       justify-content: center;
   
       .logoName {
-        //text-shadow: 1px 1px 2px $secondaryColor;
         margin-left: .8rem;
-        color: rgb(61, 236, 128);
-        font-size: 2rem;
+        color: darken($secondaryColor, 25%);
+        font-size: 1.45rem;
   
         @media(max-width: 780px){
-          font-size: 1.5rem;
+          font-size: 1.35rem;
           margin-left: .55rem;
         }
         @media(max-width: 600px){
-          font-size: 1.35rem;
+          font-size: 1.15rem;
         }
       }
       .logoImage{
-        width: 36px;
+        width: 30px;
 
         @media(max-width: 780px){
-          width: 28px;
+          width: 26px;
         }
         @media(max-width: 600px){
           width: 24px;
@@ -75,12 +70,11 @@ header {
 
         @media(max-width: 780px){
           display: block;
-          // padding: 5px;
           background-color: transparent;
           cursor: pointer;
           border: none;
           outline: none;
-          color: $whiteText;
+          color: rgb(33, 152, 33);
           font-size: 20px;
         }
       }
@@ -98,7 +92,12 @@ header {
     }
 
     .bookmarks{
-      @media(max-width: 600px){
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      @media(max-width: 780px){
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -108,13 +107,14 @@ header {
 
       a {
         padding: 10px 15px;
-        margin: 0 14px 0 0;
+        margin: 0 10px 0 0;
         transition: all 0.3s 0.2s;
         border-radius: 5px;
-        color: $whiteText;
+        color: lighten($mainColor, 15%);
         text-decoration: none;
         transition: 0.25s ease;
         font-weight: 600;
+        font-size: 14px;
   
         @media(max-width: 1040px){
           margin: 0 .75rem 0 0;
@@ -129,64 +129,64 @@ header {
         }
       }
     }
+
+    .headerSocials {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 3rem;
     
-    .downloadButtonSmall {
-      display: none;
+      a {
+        text-decoration: none;
+      }
+
+      a:nth-child(2), a:nth-child(3){
+        margin-left: -1rem;
+
+        @media(max-width: 780px){
+          margin-left: 0;
+        }
+      }
+    
+      .f_link {
+        font-size: 18px;
+        color: rgb(40, 22, 128);
+        cursor: pointer;
+        transition: .2s ease;
+    
+        &:hover {
+          color: lighten($mainColor, 45%);
+        }
+      }
+
+      @media (max-width: 1040px) {
+        margin-left: 2rem;
+      }
+
+      @media (max-width: 780px) {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
     }
   }
 
   .activeNav{
     display: flex;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
 
-    @media(max-width: 600px){
+    @media(max-width: 780px){
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
     }
   }
+}
 
-  .myDownloadButtons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    @media(max-width: 600px){
-      width: 100%;
-    }
-
-    .downloadButton {
-      // margin-left: 600px;
-      border: 1px solid $secondaryColor;
-      background-color: rgba(24, 210, 110, 0.21);
-      padding: 0 40px;
-      border-radius: 20px;
-      color: $btnText;
-      cursor: pointer;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-
-      @media(max-width: 600px){
-        width: 80%;
-        margin-top: 1rem;
-      }
-  
-      .downloadIcon {
-        font-size: 20px;
-      }
-    }
-  
-    // @media(max-width: 780px){
-    //   display: none;
-    // }
+.activeHeader{
+  @media(max-width: 780px){
+    background-color: rgb(243, 245, 245);
   }
-  // .activeDownloadBtns{
-  //   display: flex;
-  //   margin-top: 2rem;
-  // }
 }

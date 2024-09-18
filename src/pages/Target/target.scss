@@ -4,14 +4,13 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 480px;
+	height: 540px;
 
 	@media(max-width: 780px){
-		//min-height: 100vh;
-		height: 880px;
+		height: 860px;
 	}
 	@media(max-width: 600px){
-		height: 860px;
+		height: 850px;
 	}
 }
 .whyBg{
@@ -33,13 +32,6 @@
 .TargetsContainer {
 	position: absolute;
 	top: 0;
-	// background-image: url(../../assets/foodPattern.jpg);
-	// background-position: center;
-	// background-repeat: no-repeat;
-	// background-size: cover;
-	//background-color: hsl(168, 56%, 98%, .35);
-	//background-color: $darkSpringGreen;
-	//background-image: linear-gradient(to top, #29c276, #37ca8a, #46d19e, #58d8af, #6bdfc0, #7de4cd, #90e9d8, #a3ede2, #b8f2eb, #cdf6f3, #e2fbfa, #f7ffff);
 	text-align: center;
 	width: 100%;
 	height: 100%;
@@ -58,9 +50,6 @@
 	font-weight: 600;
 	font-family: 'Kanit', sans-serif;
 	color: $mainColor;
-	// background-color: $lightBg;
-	// padding: .5rem 1rem;
-	// border-radius: 4px;
 	
 	@media(max-width: 780px){
 		font-size: 1.7rem;
@@ -101,8 +90,24 @@
 	}
 }
 
+.targetRow > div:nth-child(2){
+	.itemIcon{
+		img{
+			scale: 0.9;
+		}
+	}	
+
+	&:hover{
+		.itemIcon{
+			img{
+				scale: 1;
+			}
+		}	
+	}
+}
+
 .target-card {
-	width: 30%;
+	width: 45%;
 	padding: 1.5rem 1rem;
 	display: flex;
 	flex-direction: column;
@@ -111,7 +116,7 @@
 	border-radius: 10px;
 	background-color: rgb(240, 245, 245);
 	//background-color: lighten($mainColor, 7%);
-	height: 250px;
+	height: 350px;
 	box-shadow: 0 0 6px 4px rgb(196, 189, 178);
 	transition: 0.2s ease-in-out;
 
@@ -143,10 +148,10 @@
 	.targetTitle {
 		text-shadow: none;
 		font-size: 22px;
-		font-weight: 900;
+		font-weight: 700;
 		margin-top: 1rem;
 		padding: 0;
-		//color: $aquaMarine;
+		font-family: 'Open Sans', sans-serif;
 		color: $mainColor;
 	
 		@media(max-width: 780px){
@@ -154,17 +159,20 @@
 		}
 	
 		@media(max-width: 600px){
-			font-size: 16px;
+			font-size: 18px;
 		}
 	}
 	.targetDesc{
 		font-size: 16px;
-		opacity: .75;
-		margin-top: 4px;
+		opacity: .85;
+		margin-top: 1rem;
 		max-width: 500px;
-		font-weight: 600;
-		//color: $lightBg;
+		font-weight: 500;
+		letter-spacing: 1px;
+		line-height: 1.15rem;
+		word-spacing: .15rem;
 		color: $mainColor;
+		font-family: 'Open Sans', sans-serif;
 	
 		@media(max-width: 1040px){
 			font-size: 16px;
@@ -175,7 +183,7 @@
 		}
 	
 		@media(max-width: 600px){
-			font-size: 14px;
+			font-size: 12px;
 		}
 	}
 }
